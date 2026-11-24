@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'none'; frame-src 'none'; base-uri 'self'; form-action 'none'">
+<title>Conecta Aí · Portfólio: 10 sites que colocamos no ar</title>
+<meta name="description" content="Portfólio da Conecta Aí: bar, restaurante, hamburgueria, academia, laboratório, imobiliária, concessionária, loja, estamparia e ONG. Sites que vendem, no ar e no celular.">
+<meta name="theme-color" content="#050b1f">
+<link rel="icon" href="img/marca/marca.webp" type="image/webp">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="img/marca/letreiro-branco.webp" alt="">
+  <p><span id="loadNum">00</span> / 10 projetos</p>
+  <div class="loader__bar"><span id="loadBar"></span></div>
+</div>
+
+<canvas class="net" id="net" aria-hidden="true"></canvas>
+<div class="cursor" id="cursor" aria-hidden="true"><span>Ver</span></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#topo" aria-label="Conecta Aí, início"><img src="img/marca/letreiro-branco.webp" alt="Conecta Aí" width="190" height="24"></a>
+  <nav class="nav__links" id="menu" aria-label="Seções">
+    <a href="#projetos">Projetos</a>
+    <a href="#todos">Todos</a>
+    <a href="#metodo">Como fazemos</a>
+  </nav>
+  <a class="btn btn--grad nav__cta" href="https://hctoliv.github.io/conecta-ai/#conectar">Quero meu site</a>
+  <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<main id="topo">
+
+<section class="hero" id="hero">
+  <p class="tag"><span class="dot"></span>Portfólio · São Paulo</p>
+  <h1 class="hero__title">
+    <span class="ln"><span>10 sites que</span></span>
+    <span class="ln"><span class="grad">colocamos</span></span>
+    <span class="ln"><span class="grad">no ar.</span></span>
+  </h1>
+  <div class="hero__foot">
+    <p class="hero__lead">Bar, restaurante, hamburgueria, academia, laboratório, imobiliária, concessionária, loja, estamparia e ONG. Cada um com a cara do cliente, feito para vender e para o celular.</p>
+    <dl class="hero__stats">
+      <div><dt data-count="10">0</dt><dd>projetos no ar</dd></div>
+      <div><dt data-count="7">0</dt><dd>segmentos</dd></div>
+      <div><dt>100%</dt><dd>pensados para o celular</dd></div>
+    </dl>
+  </div>
+  <a class="hero__scroll" href="#projetos" aria-label="Ver os projetos"><span></span>Role para conectar</a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+<section class="stack" id="projetos" aria-labelledby="proj-h">
+  <header class="sec__head">
+    <p class="tag"><span class="dot"></span>Projetos em destaque</p>
+    <h2 id="proj-h" class="title">Um por um, <span class="grad">no detalhe</span></h2>
+    <p class="sec__sub"><span class="hint--mouse">Passe o mouse na tela do computador para rolar o site inteiro.</span><span class="hint--touch">Toque em Ver detalhes para rolar o site inteiro.</span></p>
+  </header>
+  <div class="stack__list" id="stack"></div>
+</section>
+
+<section class="sec all" id="todos" aria-labelledby="all-h">
+  <header class="sec__head">
+    <p class="tag"><span class="dot"></span>Todos os projetos</p>
+    <h2 id="all-h" class="title">Filtre por <span class="grad">segmento</span></h2>
+  </header>
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por segmento"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="sec method" id="metodo" aria-labelledby="met-h">
+  <header class="sec__head">
+    <p class="tag"><span class="dot"></span>Como fazemos</p>
+    <h2 id="met-h" class="title">Da ideia ao site <span class="grad">no ar</span></h2>
+  </header>
+  <ol class="steps">
+    <li class="step reveal"><span class="step__n">01</span><h3>Conversa</h3><p>Entendemos o negócio, o público e o que o site precisa vender.</p></li>
+    <li class="step reveal"><span class="step__n">02</span><h3>Prévia</h3><p>Você vê o site pronto numa prévia com senha antes de fechar.</p></li>
+    <li class="step reveal"><span class="step__n">03</span><h3>Ajustes</h3><p>Textos, fotos e cores mudam até ficar com a sua cara.</p></li>
+    <li class="step reveal"><span class="step__n">04</span><h3>No ar</h3><p>Domínio, hospedagem e WhatsApp ligados. A gente segue cuidando.</p></li>
+  </ol>
+</section>
+
+<section class="cta" id="contato" aria-labelledby="cta-h">
+  <img class="cta__mark" src="img/marca/marca.webp" alt="" aria-hidden="true">
+  <h2 id="cta-h" class="cta__title">O próximo site <span class="grad">pode ser o seu.</span></h2>
+  <p>Conta a sua ideia e a gente mostra uma prévia.</p>
+  <a class="btn btn--grad btn--big" href="https://hctoliv.github.io/conecta-ai/#conectar">Montar minha conexão →</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <img src="img/marca/letreiro-branco.webp" alt="Conecta Aí" width="190" height="24">
+  <p>Sites, marketing digital e resultados.</p>
+  <p class="footer__small">© 2026 Conecta Aí · <a href="https://hctoliv.github.io/conecta-ai/">conecta-ai</a></p>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="modal__bg" data-close></div>
+  <div class="modal__box">
+    <button class="modal__close" type="button" data-close aria-label="Fechar">✕</button>
+    <div class="modal__head">
+      <p class="tag" id="mSeg"></p>
+      <h3 id="mTitle"></h3>
+      <p id="mDesc"></p>
+      <a class="btn btn--grad" id="mLink" href="#" target="_blank" rel="noopener">Ver site no ar ↗</a>
+    </div>
+    <div class="modal__shots">
+      <div class="browser"><div class="browser__bar"><i></i><i></i><i></i><span id="mUrl"></span></div><div class="browser__scroll"><img id="mFull" src="data:," alt=""></div></div>
+      <div class="phone"><img id="mCel" src="data:," alt=""></div>
+    </div>
+  </div>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
